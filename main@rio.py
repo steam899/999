@@ -114,7 +114,7 @@ def banner():
     print(banner)
 
 
-url = "https://www.999doge.com/api/web.aspx"
+url = "https://999dice.me/api"
 uadata = {
     "Origin": "file://",
     "user-agent": ua.random,
@@ -242,7 +242,7 @@ def findproxy():
     proxy = proxies[proxy_index]
 
     for n in range(1, 100):
-        req = Request('http://www.999doge.com')
+        req = Request('https://999dice.me')
         req.set_proxy(proxy['ip'] + ':' + proxy['port'], 'http')
 
         # Every 10 requests, generate a new proxy
@@ -263,7 +263,7 @@ def findproxy():
 
 
 def cekproxymanual(ip, port):
-    req = Request('http://www.999doge.com')
+    req = Request('https:// 999dice.me')
     req.set_proxy(ip + ':' + port, 'http')
     try:
         urlopen(req, timeout=5).read().decode('utf8')
@@ -418,7 +418,7 @@ username = obj["Account"]["Username"]
 password = obj["Account"]["Password"]
 # SET UP API AKSES FROM 999DOGE.COM
 if obj["Account"]["API Access"] == "OFF" or obj["Account"]["API Access"] == "off" or obj["Account"]["API Access"] == "Off":
-    apiAkses = "cd6f9843b05f4042ad1d4060d290b2fd"
+    apiAkses = "ea4dae6c290ed25c789e06e185d18152c131151029a321004138eb714657141e"
 else:
     apiAkses = obj["Account"]["API Access"]
 
